@@ -1,0 +1,494 @@
+
+/*Estilos Generales/*/
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Lato', Sans-serif;
+    font-size: 1.09rem;
+    }
+
+    /* ESTILOS DE TEXTO*/
+
+    h2 {
+        font-size: 1.85rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .divider {
+        border-bottom: 2px solid #f00;
+        width: 115px;
+        margin: 30px auto;
+    }
+
+    /*padding top a elemeto main*/
+    
+main {
+	padding-top: 80px;
+}
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+/*modificar modelo de cajas css*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+-webkit-box-sizing: inherit;
+        box-sizing: inherit;
+}
+
+/*reseteo de margenes y padding*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+/*CENTRAR ELEMENTOS EN PANTALLA*/
+
+.container{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/*BARRA DE NAVEGACION*/
+
+
+#navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#main-nav {
+	display: flex;
+	list-style: none;
+	margin: auto;
+	font-family: 'roboto', sans-serif;
+}
+#main-nav li {
+	padding: 12px 0.85em;
+}
+#main-nav li a {
+	color: #0f0f0f;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.95rem;
+	padding-bottom: 12px;
+}
+
+#main-nav li a:hover {
+border-bottom: 2px solid #ff0000;
+
+}
+
+#main-nav + a {
+	color: #0f0f0f;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.95rem;
+	border: 1px solid #ff0000;
+    padding: 12px 3em;
+    transition: all 0.5s;
+}
+
+#main-nav + a:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transition: all 0.5s;
+}
+nav {
+	padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    background-color:#fff;
+}
+
+#navigation span {
+	display: none;
+}
+
+/*Seccion UNO*/
+article> section:nth-child(1){
+    background-image: linear-gradient(rgba(41, 24, 21, 0.5), rgba(41, 24, 21, 0.9)) ,url(../images/buffet-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;/*efecto en la imagen al rollear para abajo*/
+}
+
+#seccionUno {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	min-height: 600px;
+}
+#seccionUno h1 {
+	font-size: 3rem;
+	font-family: arial, tahoma, verdana, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+    color: #ffff00;
+    text-shadow: 5px 3px 0 #000;
+}
+
+/*seccion DOS*/
+article > section:nth-child(2) {
+/*margin: 60px 0;*/
+}
+
+#seccionDos {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 40px;
+}
+#seccionDos div {
+    flex-basis: 65%;
+    padding-left: 1.85em;
+}
+#seccionDos img {
+	flex-basis: 35%;
+    max-width: 35%;
+    align-self: flex-start;
+    height: 295px;
+}
+
+/*SECCION TRES*/
+
+#seccionTres {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+    font-size: 2rem;
+    height: 360px;
+    align-items: center;
+    color:#fff;
+}
+
+article> section:nth-child(3){
+    background-image: linear-gradient(rgba(41, 24, 21, 0.5), rgba(41, 24, 21, 0.9)) ,url(../images/food-table.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;/*efecto en la imagen al rollear para abajo*/
+}
+
+/*SECCION CUATRO*/
+article > section:nth-child(4) {
+	margin: 60px 0;
+}
+
+#seccionCuatro {
+	display: flex;
+	margin-top: 60px;
+}
+
+#seccionCuatro img {
+	width: 100%;
+}
+#seccionCuatro div {
+	margin: 0 0.5em;
+	box-shadow: -2px 2px 2px #ccc , 2px 4px 1px #ccc;
+	padding-bottom: 15px;
+}
+
+#seccionCuatro h3 {
+	text-align: center;
+    padding: 12px 0;
+    font-weight: 500;
+}
+
+/*seccionCINCO*/
+article > section:nth-child(5) {
+	margin: 60px 0;
+	text-align: center;
+	background-color: #f3f2f2;
+	padding: 60px 0;
+}
+
+#seccionCinco {
+	display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.col {
+	width: 33%;
+    margin: 0 0.5em;
+    transition: all 0.5s;
+}
+
+.col:hover {
+    box-shadow: 0 -5px 15px #cac9c9, 0 8px 15px #cac9c9;
+    transition: all 0.5s;
+}
+
+.col ul {
+	border: 1px solid #ccc;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.col ul li {
+	padding: 20px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.package-header {
+	font-size: 1.5rem;
+}
+.price {
+	background-color: #ececec;
+	font-size: 1.3rem;
+}
+
+.col ul li i {
+	color: #008000;
+}
+
+/*Seccion seis*/
+
+article > section:nth-child(6) {
+	margin: 60px 0 0;
+}
+#addressBox {
+	text-align: center;
+}
+
+#addressBox p {
+	margin-bottom: 12px;
+}
+
+#contacto {
+	/*display: flex;*/
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin: 60px 0 12px;
+}
+
+label {
+	font-size: 1.12rem;
+	margin: 12px 0;
+}
+
+.col-input {
+    width: 33%;
+    padding: 0 0.5em;
+}
+
+.col-input input {
+	width: 100%;
+	height: 45px;
+	margin: 15px 0;
+    border: 1px solid #ccc;
+}
+
+.col-input input:focus, #col-text textarea:focus {
+	border: 1px solid #3f3d3d;
+    box-shadow: 0 0 8px #3f3d3d;
+    transition: all 1s;
+}
+
+#col-text {
+	padding: 0 0.5em;
+}
+
+#mensaje {
+	width: 100%;
+	border: 1px solid #ccc;
+	margin: 15px 0;
+}
+input[type="submit"] {
+	background-color: #008000;
+	color: #fff;
+	display: inline-block;
+	width: 215px;
+	height: 45px;
+	font-size: 1rem;
+	margin: 12px 0.5em 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+/*footer*/
+
+footer {
+	background-color: #1e1e1e;
+	padding: 30px 0 0;
+}
+
+#pieDePagina {
+	display: flex;
+	justify-content: center;
+}
+
+#pieDePagina a i {
+	color: #fff;
+	font-size: 2rem;
+	margin-left: 12px;
+}
+
+#copyright {
+	text-align: center;
+	color: #fff;
+	font-size: 1rem;
+	padding: 12px 0;
+	border-top: 1px solid #423d3d;
+	margin: 12px 0 0;
+}
+
+
+/*MEDIA QUERIES*/
+/* estilos cando el viewpoert es igual o menor a 1199px*/
+
+@media screen and (max-width:1199px){
+    body {
+        font-size: 1.04rem;
+    }
+}
+
+
+/*980 A 1199PX*/
+
+@media  screen and (min-width:980px) and (max-width:1199px){
+
+
+    #seccionDos img {
+        display: none;
+    }
+
+    #seccionDos div {
+        flex-basis: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .col ul li:nth-child(n+3) {
+
+        font-size: 0.95rem;
+    }
+
+    laberl{
+        font-size: 0.95rem;
+    }
+
+}
+
+
+/*960 A 979PX*/
+
+@media screen and (min-width:960px) and (max-width:979px){
+
+    #main-nav li {
+        font-size: 0.95rem;
+    }
+
+    #main-nav + a {
+        padding: 12px 1.5em;
+    }
+
+
+    /*seccion dos*/
+    #seccionDos img {
+        display: none;
+    }
+
+    #seccionDos div {
+        flex-basis: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .package-header, .price {
+        font-size: 1.1rem;
+    }
+
+    .col ul li:nth-child(n+3) {
+        font-size: 0.8rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    input[type="submit"] {
+        width: 160px;
+        font-size: 0.95rem;
+    }
+}
+
+/* aplicar cuando es menor a 959px*/
+
+@media screen and (max-width:959px){
+
+    #main-nav, #main-nav + a {
+        display: none;
+    }
+
+    #navigation span {
+        display: block;
+        border: 1px solid #ff0000;
+        padding: 12px 1em;
+    }
+    #seccionUno h1 {
+        font-size: 3.3rem;
+    }
+    #seccionDos, #seccionCuatro, #seccionCinco, #seccionSeis {
+        flex-flow: column;
+    }
+        #seccionDos img {
+            display: none;
+        }
+
+        #seccionCuatro div {
+            margin: 0 0.45em;
+            box-shadow: -2px 2px 2px #ccc , 2px 4px 1px #ccc;
+            padding-bottom: 15px;
+        }
+
+        .col {
+            width: 100%;
+            margin: 0 auto 45px;
+        }
+        .col-input {
+            width: 100%;
+        }
+
+        article > section:nth-child(5) {
+            margin: -60px 0 0;
+            padding: 30px 0;
+        }
+    }
+
+    /*aplicar cunado sea igual o menor a 393*/
+
+    @media screen and (max-width:393px){
+        #navigation span {
+            border: none;
+            font-size: 0.95em;
+        }
+
+        #seccionUno h1 {
+            font-size: 2.95rem;
+            line-height: 1.5;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+
+    }
