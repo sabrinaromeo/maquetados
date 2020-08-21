@@ -1,0 +1,671 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/*Estilos Generales/*/
+html, body{
+    height: 100%;
+}
+.top {
+	display: none;
+}
+/*modificar modelo de cajas css*/
+html{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*, *::before, *::after{
+-webkit-box-sizing: inherit;
+        box-sizing: inherit;
+}
+
+/*reseteo de margenes y padding*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+font-size: 1.09rem;
+}
+
+/*CENTRAR ELEMENTOS EN PANTALLA*/
+
+.container{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/*ESTILOS GENERALES TEXTOS*/
+h2 {
+    font-size: 1.45rem;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+    padding-right: 1em;
+    margin-bottom: 25px;
+}
+
+/*estilos Botones*/
+.btn {
+    display: block;
+    background-color: #ffa600;
+    width: 250px;
+    padding: 12px 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffa600;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+.transparent {
+    display: inline-block;
+    border: 1px solid #ffa600;
+    width: 250px;
+    padding: 12px 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+.transparent:hover{
+    background-color: #ffa600;
+    color: #fff;
+}
+
+
+
+/*ESTILO CONTENIDOS*/
+
+/*BARRA DE NAVEGACION*/
+#navbar {
+    background-color: #0b1245;
+}
+#navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+#main-nav {
+    display: flex;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+#main-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 0.9rem;
+    display: inline-block;
+}
+
+#main-nav li:last-child {
+    color: #ffa600;
+    padding: 25px 0.9em;
+}
+
+#main-nav li a:hover {
+    background-color: #060829;
+}
+
+#navbar-toggle {
+
+color: #fff;
+font-size: 1.5rem;
+position: absolute;
+top: 62px;
+right: 35px;
+display: none;
+}
+
+/*PIE DE PAGINA*/
+footer {
+    background-color: #121018;
+}
+#pieDePaina {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+footer h3 {
+    color: #9f9f9f;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+footer ul {
+    margin: 20px 0;
+}
+footer li {
+   list-style: none;
+    padding: 5px 0;
+}
+
+footer ul li a {
+    color: #9f9f9f;
+    text-decoration: none;
+    font-size: 0.88rem;
+}
+footer a img {
+    width: 160px;
+}
+    #social {
+        text-align: center;
+    }
+    #social .fab {
+        color: #fff;
+        margin-left: 1em;
+        font-size: 1.3rem;
+    }
+
+    #copyright {
+        color: #9f9f9f;
+        text-align: center;
+        font-size: 0.8rem;
+        border-top: 1px solid #272323;
+        padding: 12px 0;
+    }
+    /*pagina INICIO*/
+    /*SECCION1*/
+    article#home > section:nth-child(1) {
+        background-image: linear-gradient(rgba(26, 26, 50, 0.9 ), rgba(26, 26, 50, 0.9 )), url(../images/gavel-book.jpg);
+        background-repeat: none;
+        background-position: center center;
+        background-size: cover;
+    }
+    #seccionPrimera {
+        height: 100%;
+        min-height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #seccionPrimera h1 {
+        color: #fff;
+        font-size: 3.5em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: arial, verdana, sans-serif;
+    }
+    #seccionPrimera p {
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 15px 0;
+        margin-bottom: 0;
+    }
+    #seccionPrimera div {
+
+        text-align: center;
+    }
+
+    #seccionPrimera a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border: 1px solid;
+        display: inline-block;
+        padding: 12px 2.5em;
+        margin: 12px 0 0;
+    }
+    #seccionPrimera a:hover {
+
+        background-color: #aeaeae;
+        color: #000;    
+    }
+
+    /*SECCION DOS*/
+    #seccionSegunda {
+        display: flex;
+        padding: 80px 0;
+    }
+    #seccionSegunda div {
+
+        padding: 0 0.5em;
+        align-self: center;
+        flex-basis: 60%;
+    }
+    #seccionSegunda img {
+        flex-basis: 40%;
+        max-width: 40%;
+        align-self: flex-start;
+    }
+   
+
+    /*SECCION TRES*/
+    article > section:nth-child(3) {
+    background-color: #d3d3d3;
+    }
+    #seccionTercera {
+        display: flex;
+    }
+
+    #seccionTercera.container {
+    width: 100%;
+   /* background-color: #d3d3d3;*/
+    }
+    #seccionTercera div {
+        flex-basis: 50%;
+        padding-left: 2em;
+        align-self: center;
+    }
+    
+    /*SECCION CUATRO*/
+    article > section:nth-child(4) {
+    text-align: center;
+    padding: 80px 0 12px;
+
+}
+#seccionCuarta {
+
+    display: flex;
+    margin: 80px auto;
+
+}
+.col {
+
+    margin: 0 0.9em;
+
+}
+.col .fas {
+
+    color: #ffa600;
+    font-size: 3rem;
+    margin-bottom: 25px;
+
+}
+.col h3 {
+
+    margin-bottom: 12px;
+    color: #3c3c3c;
+    font-size: 1.1em;
+    font-weight: 100;
+
+}
+.col p {
+
+    font-size: 0.85rem;
+    text-align: justify;
+
+}
+
+/*SECCION CINCO*/
+
+article > section:nth-child(5) {
+
+    background-color: #d3d3d3;
+    padding: 50px 0;
+
+}
+#seccionQuinta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*ESTILO PAGINAS*/
+
+main header {
+    background-color: 
+    #e69807;
+    padding: 45px 0;
+    margin-bottom: 40px;
+}
+
+
+main header h1 {
+
+    font-size: 1.9rem;
+    color: 
+
+    #fff;
+    text-transform: uppercase;
+}
+
+#pages {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 80px;
+}
+#pages section {
+    flex-basis: 70%;
+    padding-right: 1em;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+aside {
+    flex-basis: 30%;
+}
+aside h3 {
+    background-color:#d1cfdf;
+    padding: 12px 0 12px 0.5em;
+    margin-bottom: 20px;
+    font-size: 1.20rem;
+    font-weight: 100;
+}
+
+
+aside ul {
+    list-style: none;
+    margin: 0 0 30px 0.5em;
+}
+
+aside ul li a {
+    text-decoration: none;
+    line-height: 1.8;
+    color:#0b1245;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+#socialMedia {
+    margin: 0 0 25px 0.5em;
+    font-size: 2.5rem;
+}
+
+#socialMedia i {
+    margin-right: 0.8em;
+    color:#0b1245;
+}
+#boletin {
+    margin-left: 0.5em;
+}
+
+#boletin p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+#boletin label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+input#correo {
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 12px;
+}
+#boletin input[type="submit"] {
+    background-color:#008000;
+display: inline-block;
+    padding: 10px 1em;
+    color:#fff;
+    border: none;
+    width: 150px;
+    font-size: 0.95rem;
+}
+
+.row {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 22px;
+
+}
+.row img {
+    float: left;
+    width: 55%;
+    margin-right: 1em;
+    margin-bottom: 12px;
+}
+.row p{
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom:20px;
+}
+
+.row i {
+    color:#0b1245;
+    font-size: 1.1rem;
+    display:flex;
+    margin-bottom: 12px;
+}
+
+form {
+	margin-right: 1em;
+}
+.asterisco {
+  color: #f00;
+}
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.98rem;
+}
+
+input[type="text"], input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+textarea#comentario {
+	width: 100%;
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+
+input[type="submit"] {
+	background: #008000;
+	display: inline-block;
+	padding: 10px 1em;
+	width: 100%;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+}
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 1199px){
+    body{
+        font-size: 0.95rem;
+    }
+}
+
+/*ESTILOS VIEWPORT 960 A 1199PX*/
+
+@media screen and (min-width: 960px) and (max-width: 1199px){
+
+    #seccionPrimera h1 {
+     font-size: 2.5em
+    }
+
+    #seccionPrimera p {
+        font-size: 1.25rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    #seccionTercera img {
+        flex-basis: 45%;
+        max-width: 45%;
+    }
+    #seccionTercera div {
+        flex-basis: 55%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .col p {
+        text-align: center;
+    }
+    #pages {
+        margin-bottom: 12px;
+    }
+    #boletin p {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+aside ul li a {
+        font-size: 0.95rem;
+}
+
+.row {
+    margin: 0 1em 25px 0;
+}
+
+.row img {
+	float: none;
+	width: 100%;
+}
+#pages .row:not(:last-child) { /*se aplica en todos menos en el ultimo "objeto" del listado*/
+
+    border-bottom: 1px solid  #ccc;
+
+}
+.transparent {
+    margin-bottom: 30px;
+
+}
+.row i {
+
+display:inline-flex;
+margin-right: 1em;
+margin-bottom: 20px;
+}
+}
+
+/*ESTILOS VIEWPORT +o menor 959px*/
+@media screen and (max-width: 959px){
+
+    #navegacion {
+        display: block;
+    }
+    #main-nav {
+        display: none;
+        flex-direction: column;
+    }
+    #navbar-toggle {
+        display: block;
+    }
+    #main-nav li a {
+        display: block;
+        padding: 20px 1em;
+    }
+
+#main-nav li:not(:last-child) {
+border-bottom: 1px solid #353535;
+}
+
+#main-nav li:last-child {
+	display: none;
+}
+.top {
+	background-color: #000;
+	color: #ffa600;
+	padding: 12px 0;
+    font-size: 0.85rem;
+    display: block;
+}
+.top ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+/*ESTILOS PAGINA INICIOI*/
+#seccionPrimera h1 {
+	font-size: 2.5rem;
+}
+
+#seccionPrimera p {
+	font-size: 1.25rem;
+}
+
+#seccionSegunda, #seccionTercera, #seccionCuarta, #seccionQuinta {
+	flex-direction: column;
+}
+#seccionSegunda div, #seccionTercera div {
+	padding: 0;
+	align-self: normal;
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.btn, .transparent {
+	width: 100%;
+}
+#seccionSegunda img, #seccionTercera img {
+	display: none;
+}
+#seccionTercera.container {
+    width: 90%;
+    padding: 20px 0;
+}
+
+.transparent {
+    margin-bottom: 20px;
+}
+
+article > section:nth-child(4) {
+    padding: 35px 0 0px;
+
+}
+
+#seccionCuarta {
+	margin: 35px auto;
+}
+.col {
+	margin: 20px 0.9em 30px;
+	border: 1px solid #ffa600;
+	padding: 30px 2em;
+}
+.col p {
+	text-align: center;
+}
+#seccionQuinta {
+	text-align: center;
+}
+
+/*ESTILO PAGINAS*/
+
+#pages section {
+	flex-basis: 95%;
+   padding-right: 0;
+
+}
+
+aside {
+	flex-basis: 100%;
+}
+
+#pages {
+display: inline;
+}
+
+.row img {
+	float: none;
+	width: 100%;
+}
+
+#pages .row:not(:last-child) {
+    border: 1px solid #ccc;
+}
+.row i{
+    margin-right: 1em;
+}
+
+form {
+	padding-bottom: 15px;
+}
+
+}
+
+/* viewport igual o menor a 659px */
+@media screen and (max-width:659px) {
+    #pieDePaina {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
